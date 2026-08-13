@@ -1,0 +1,40 @@
+# =============================================================
+# Marathi RAG Prototype — Python Dependencies
+# =============================================================
+# Every package chosen for local-first, production-migratable use.
+# See docs/migration_plan.md for production swap-outs.
+
+# --- Web Framework ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+
+# --- Environment & Config ---
+python-dotenv==1.0.1
+pydantic-settings==2.4.0
+
+# --- Database ---
+sqlalchemy==2.0.35
+aiosqlite==0.20.0          # async SQLite driver
+
+# --- Vector Store ---
+chromadb==0.5.15
+
+# --- ASR (Speech-to-Text) ---
+openai-whisper==20240930
+ffmpeg-python==0.2.0
+
+# --- Embeddings ---
+sentence-transformers==3.1.1  # wraps BAAI/bge-m3
+torch==2.4.1                  # CPU build; GPU users: see README
+transformers==4.44.2
+
+# --- LLM (Groq) ---
+groq==0.15.0
+
+# --- Utilities ---
+numpy==1.26.4
+tqdm==4.66.5
+rich==13.8.1                  # pretty CLI output for pipeline
+uuid==1.30
+rank-bm25==0.2.2              # lexical retrieval for hybrid search

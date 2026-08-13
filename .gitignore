@@ -1,0 +1,39 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+
+# Database (local data — not committed)
+database/chroma/
+database/sqlite/
+
+# Media (large files — not committed)
+media/audio/
+media/transcripts/
+media/chunks/
+media/videos/
+
+# Models cache
+models/
+
+# Next.js
+frontend/.next/
+frontend/out/
+frontend/node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
